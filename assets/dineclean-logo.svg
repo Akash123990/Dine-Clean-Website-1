@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Dine Clean logo</title>
+  <desc id="desc">Green Dine Clean logo with plate, cutlery, bubbles, and brand name.</desc>
+  <rect width="1024" height="1024" fill="#fbf8f0"/>
+  <g fill="none" stroke="#11742f" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="455" cy="355" r="170" stroke-width="32"/>
+    <path d="M325 474a215 215 0 1 1 260-7" stroke-width="38"/>
+    <circle cx="654" cy="238" r="38" stroke-width="28"/>
+    <circle cx="742" cy="172" r="42" stroke-width="28"/>
+    <circle cx="772" cy="310" r="50" stroke-width="28"/>
+    <path d="M687 376a58 58 0 1 1-2 82" stroke-width="28"/>
+  </g>
+  <g fill="#11742f">
+    <rect x="408" y="297" width="50" height="285" rx="24" transform="rotate(36 433 440)"/>
+    <path d="M548 297c22-16 49 10 34 33L435 574c-12 19-42 13-45-9-1-7 0-14 4-20l154-248z"/>
+    <rect x="369" y="276" width="24" height="126" rx="12" transform="rotate(-45 381 339)"/>
+    <rect x="410" y="266" width="24" height="133" rx="12" transform="rotate(-45 422 333)"/>
+    <rect x="451" y="265" width="24" height="119" rx="12" transform="rotate(-45 463 324)"/>
+  </g>
+  <text x="70" y="764" fill="#11742f" font-family="Arial, Helvetica, sans-serif" font-size="158" font-weight="800">DineClean</text>
+</svg>

@@ -822,6 +822,16 @@ h3 {
   transform: scale(1.045);
 }
 
+.product-media img.product-image-contain {
+  object-fit: contain;
+  padding: 28px 22px 20px;
+  background: #ffffff;
+}
+
+.product-card:hover .product-media img.product-image-contain {
+  transform: scale(1.025);
+}
+
 .product-media-dish img {
   object-position: 47% 52%;
 }
@@ -843,7 +853,11 @@ h3 {
 }
 
 .product-media-room img {
-  object-position: 93% 44%;
+  object-position: center;
+}
+
+.product-media-tissue img {
+  object-position: center;
 }
 
 .product-chip {
@@ -1939,6 +1953,12 @@ dialog::backdrop {
   min-height: 490px;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+.product-dialog-media img.is-contain {
+  object-fit: contain;
+  padding: 32px;
+  background: #ffffff;
 }
 
 .product-dialog-content {

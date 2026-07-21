@@ -6,6 +6,7 @@
     "Dish Wash": {
       id: "dish-wash",
       category: "Kitchen care",
+      image: "assets/dineclean-product-collection.png",
       description: "A practical daily-use choice for plates, cookware, utensils, and the kitchen moments that keep everything moving.",
       bestFor: "Dishes, cookware, and everyday kitchen cleanup",
       position: "47% 52%"
@@ -13,6 +14,7 @@
     Phenyl: {
       id: "phenyl",
       category: "Floor care",
+      image: "assets/dineclean-product-collection.png",
       description: "A straightforward floor-care option for regular cleaning routines and a fresh, clean-feeling finish.",
       bestFor: "Routine floor cleaning in everyday spaces",
       position: "26% 49%"
@@ -20,6 +22,7 @@
     "Floor Cleaner": {
       id: "floor-cleaner",
       category: "Floor care",
+      image: "assets/dineclean-product-collection.png",
       description: "For tiled, marble, and commonly used household floor surfaces that benefit from regular attention.",
       bestFor: "Tile, marble, and common floor surfaces",
       position: "16% 64%"
@@ -27,6 +30,7 @@
     "Glass Cleaner": {
       id: "glass-cleaner",
       category: "Surface care",
+      image: "assets/dineclean-product-collection.png",
       description: "For windows, mirrors, glass tables, and the clear details that help a room feel brighter and more cared for.",
       bestFor: "Mirrors, windows, and glass surfaces",
       position: "73% 43%"
@@ -34,16 +38,26 @@
     Freshener: {
       id: "freshener",
       category: "Fresh spaces",
-      description: "A finishing touch for frequently used rooms and shared spaces that benefit from a pleasant, welcoming feel.",
+      image: "assets/dineclean-room-freshener.png",
+      description: "Shree Ram Darbaar air freshener sprays for frequently used rooms and shared spaces that benefit from a pleasant, welcoming feel.",
       bestFor: "Frequently used home and workplace spaces",
-      position: "92% 58%"
+      position: "center"
     },
     "Room Freshener": {
       id: "room-freshener",
       category: "Fresh spaces",
-      description: "For bedrooms, halls, offices, washrooms, reception areas, and the spaces where a fresh first impression matters.",
+      image: "assets/dineclean-room-freshener.png",
+      description: "A 3-in-1 room freshener combo pack for bedrooms, halls, offices, washrooms, reception areas, and fresh first impressions.",
       bestFor: "Rooms, halls, offices, and reception areas",
-      position: "93% 44%"
+      position: "center"
+    },
+    "Tissue Combo": {
+      id: "tissue-combo",
+      category: "Home essentials",
+      image: "assets/dineclean-tissue-combo.png",
+      description: "A DineClean 7-in-1 tissue combo pack with tissue boxes, napkins, kitchen roll, and toilet rolls for everyday home and office needs.",
+      bestFor: "Homes, offices, washrooms, dining spaces, and everyday use",
+      position: "center"
     }
   };
 
@@ -258,7 +272,9 @@
     dialogProductDescription.textContent = product.description;
     dialogProductUse.textContent = product.bestFor;
     dialogProductImage.alt = `${productName} product presentation`;
+    dialogProductImage.src = product.image || "assets/dineclean-product-collection.png";
     dialogProductImage.style.objectPosition = product.position;
+    dialogProductImage.classList.toggle("is-contain", product.position === "center");
     openDialog(productDialog);
   };
 

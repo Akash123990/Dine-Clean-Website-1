@@ -3,191 +3,474 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dine Clean | Professional Home & Cleaning Essentials</title>
+    <meta name="theme-color" content="#0b5b35" />
+    <meta name="robots" content="index, follow" />
+    <title>DineClean | Premium Home & Cleaning Essentials</title>
     <meta
       name="description"
-      content="Dine Clean supplies dish wash, phenyl, floor cleaners, glass cleaners, fresheners, and everyday home cleaning essentials."
+      content="DineClean offers thoughtful home and hygiene essentials for kitchens, floors, glass surfaces, and fresh everyday spaces."
     />
+    <link rel="canonical" href="https://dineclean.in/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/dineclean-product-collection.png"
+      imagesrcset="assets/dineclean-product-collection.png 1122w"
+      imagesizes="(max-width: 760px) 88vw, 46vw"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DineClean" />
+    <meta property="og:title" content="DineClean | Premium Home & Cleaning Essentials" />
+    <meta
+      property="og:description"
+      content="Thoughtful cleaning essentials for fresh, well-cared-for everyday spaces."
+    />
+    <meta property="og:url" content="https://dineclean.in/" />
+    <meta property="og:image" content="https://dineclean.in/assets/dineclean-product-collection.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DineClean | Premium Home & Cleaning Essentials" />
+    <meta
+      name="twitter:description"
+      content="Thoughtful cleaning essentials for fresh, well-cared-for everyday spaces."
+    />
+    <meta name="twitter:image" content="https://dineclean.in/assets/dineclean-product-collection.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DineClean",
+        "url": "https://dineclean.in/",
+        "logo": "https://dineclean.in/assets/dineclean-logo.jpeg",
+        "description": "Home and cleaning essentials for kitchens, floors, glass surfaces, and fresh everyday spaces.",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+91-8470004450",
+            "email": "apenterprisescontact@gmail.com",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": ["en", "hi"]
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="styles.css" />
+    <script src="assets/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Dine Clean home">
-        <img src="assets/dineclean-logo.jpeg" alt="Dine Clean logo" />
-        <span>Dine Clean</span>
-      </a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+    <header class="site-header" id="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="DineClean home">
+          <img src="assets/dineclean-logo.jpeg" alt="DineClean logo" width="96" height="96" />
+          <span>Dine<span>Clean</span><sup>&trade;</sup></span>
+        </a>
 
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#mission">Mission</a>
-        <a href="#vision">Vision</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#home" data-nav-link>Home</a>
+          <a href="#about" data-nav-link>About</a>
+          <a href="#mission" data-nav-link>Mission</a>
+          <a href="#vision" data-nav-link>Vision</a>
+          <a href="#products" data-nav-link>Products</a>
+          <a href="#contact" data-nav-link>Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-button desktop-only" type="button" data-open-search aria-label="Search products" title="Search products">
+            <i data-lucide="search" aria-hidden="true"></i>
+          </button>
+          <button class="icon-button enquiry-button" type="button" data-open-enquiry aria-label="Open product enquiry" title="Your enquiry">
+            <i data-lucide="shopping-bag" aria-hidden="true"></i>
+            <span class="enquiry-count" data-enquiry-count hidden>0</span>
+          </button>
+          <a class="nav-contact desktop-only" href="#contact">Talk to us <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <button class="nav-toggle" type="button" aria-controls="site-nav" aria-label="Open menu" aria-expanded="false">
+            <i class="menu-icon" data-lucide="menu" aria-hidden="true"></i>
+            <i class="close-icon" data-lucide="x" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-copy-block">
-          <p class="eyebrow">Cleaning Essentials for Everyday Spaces</p>
-          <h1>Dine Clean</h1>
-          <p class="hero-copy">
-            Professional home needs and hygiene products made for fresh kitchens, spotless floors,
-            bright glass, and comfortable rooms.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#products">Explore Products</a>
-            <a class="button secondary" href="https://wa.me/918470004450">WhatsApp Us</a>
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy" data-reveal="up">
+            <p class="eyebrow"><span></span> Home and hygiene essentials</p>
+            <h1 id="hero-title">Care that feels <em>cleaner.</em></h1>
+            <p class="hero-intro">
+              Thoughtful daily-use essentials for kitchens, floors, glass surfaces, and the spaces you call home.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#products">
+                Explore the range <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+              <a class="button button-secondary" href="https://wa.me/918470004450" target="_blank" rel="noopener">
+                <i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp us
+              </a>
+            </div>
+            <ul class="hero-notes" aria-label="DineClean benefits">
+              <li><i data-lucide="check" aria-hidden="true"></i> Everyday home care</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Direct product guidance</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" data-reveal="right">
+            <div class="hero-visual-frame">
+              <img
+                src="assets/dineclean-product-collection.png"
+                alt="A curated collection of DineClean home-cleaning products"
+                width="1122"
+                height="1400"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            <div class="hero-note hero-note-top">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <span>Fresh spaces, simply cared for</span>
+            </div>
+            <div class="hero-note hero-note-bottom">
+              <span class="note-kicker">THE DINECLEAN WAY</span>
+              <strong>Kitchen. Floor. Glass. Air.</strong>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="hero-card" aria-label="Dine Clean product promise">
-          <img src="assets/dineclean-logo.jpeg" alt="Dine Clean brand logo" />
-          <div class="hero-card-content">
-            <p>Trusted cleaning range</p>
-            <strong>Homes . Offices . Restaurants . Shops</strong>
+      <section class="assurance-bar" aria-label="DineClean highlights">
+        <div class="assurance-item" data-reveal="up">
+          <i data-lucide="sparkle" aria-hidden="true"></i>
+          <div><strong>Thoughtfully chosen</strong><span>Essentials for daily care</span></div>
+        </div>
+        <div class="assurance-item" data-reveal="up">
+          <i data-lucide="house" aria-hidden="true"></i>
+          <div><strong>For everyday spaces</strong><span>Home, shop, office, and more</span></div>
+        </div>
+        <div class="assurance-item" data-reveal="up">
+          <i data-lucide="messages-square" aria-hidden="true"></i>
+          <div><strong>Direct support</strong><span>Guidance when you need it</span></div>
+        </div>
+      </section>
+
+      <section class="section product-section" id="products" aria-labelledby="products-title">
+        <div class="section-heading split-heading" data-reveal="up">
+          <div>
+            <p class="eyebrow"><span></span> Product list</p>
+            <h2 id="products-title">Every essential, in its right place.</h2>
           </div>
-        </div>
-      </section>
-
-      <section class="trust-strip" aria-label="Dine Clean highlights">
-        <div>
-          <strong>Fresh Fragrance</strong>
-          <span>Clean, pleasant spaces</span>
-        </div>
-        <div>
-          <strong>Daily Use</strong>
-          <span>Products for routine cleaning</span>
-        </div>
-        <div>
-          <strong>Value Focused</strong>
-          <span>Practical choices for every need</span>
-        </div>
-      </section>
-
-      <section class="section about" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About Dine Clean</p>
-          <h2>Cleanliness made easier for modern homes and workplaces.</h2>
-        </div>
-        <div class="about-layout">
           <p>
-            Dine Clean supplies daily-use home needs and cleaning items for kitchens, floors,
-            glass surfaces, bathrooms, rooms, and shared spaces. Our products are selected for
-            practical cleaning performance and a fresh finish.
-          </p>
-          <p>
-            Whether it is a family home, office, shop, restaurant, or small business, Dine Clean
-            helps keep spaces hygienic, welcoming, and ready for everyday life.
+            Browse the DineClean range and add the products you need to one simple WhatsApp enquiry.
           </p>
         </div>
-      </section>
 
-      <section class="statement-grid" id="mission">
-        <article class="statement-card dark">
-          <p class="eyebrow">Mission</p>
-          <h2>To make everyday cleaning simple, affordable, and reliable.</h2>
-          <p>
-            We provide quality cleaning essentials that help people maintain healthier, fresher
-            spaces with confidence.
-          </p>
-        </article>
-
-        <article class="statement-card light" id="vision">
-          <p class="eyebrow">Vision</p>
-          <h2>To become a trusted cleaning partner for homes and businesses.</h2>
-          <p>
-            We aim to grow Dine Clean into a dependable name known for strong cleaning
-            performance, freshness, and customer-friendly service.
-          </p>
-        </article>
-      </section>
-
-      <section class="section products" id="products">
-        <div class="section-heading compact">
-          <p class="eyebrow">Product List</p>
-          <h2>Essential products for every corner.</h2>
-          <p>
-            A complete cleaning range for daily hygiene, surface care, and fresh-smelling spaces.
-          </p>
+        <div class="product-toolbar" data-reveal="up">
+          <p><span>6</span> everyday cleaning categories</p>
+          <button class="text-button" type="button" data-open-search>
+            Find a product <i data-lucide="search" aria-hidden="true"></i>
+          </button>
         </div>
 
         <div class="product-grid">
-          <article class="product-card">
-            <span class="product-icon">01</span>
-            <h3>Dish Wash</h3>
-            <p>For utensils, plates, cookware, and daily kitchen cleaning.</p>
+          <article class="product-card" id="dish-wash" data-product-card data-name="Dish Wash" data-category="Kitchen care">
+            <div class="product-media product-media-dish">
+              <span class="product-chip">Kitchen care</span>
+              <button class="wishlist-button" type="button" data-wishlist="Dish Wash" aria-label="Save Dish Wash" aria-pressed="false" title="Save Dish Wash">
+                <i data-lucide="heart" aria-hidden="true"></i>
+              </button>
+              <img src="assets/dineclean-product-collection.png" alt="Dish wash product presentation" width="1122" height="1400" loading="lazy" decoding="async" />
+            </div>
+            <div class="product-content">
+              <div class="product-title-row"><h3>Dish Wash</h3><span>01</span></div>
+              <p>For dishes, plates, cookware, and a more comfortable daily kitchen routine.</p>
+              <div class="product-meta"><span>Everyday essential</span><strong>Enquire for price</strong></div>
+              <div class="product-actions">
+                <button class="inline-action" type="button" data-quick-view="Dish Wash"><i data-lucide="eye" aria-hidden="true"></i> Quick view</button>
+                <button class="product-add" type="button" data-add-enquiry="Dish Wash">Add to enquiry <i data-lucide="plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
           </article>
-          <article class="product-card">
-            <span class="product-icon">02</span>
-            <h3>Phenyl</h3>
-            <p>For hygienic floor cleaning with a fresh, clean finish.</p>
+
+          <article class="product-card" id="phenyl" data-product-card data-name="Phenyl" data-category="Floor care">
+            <div class="product-media product-media-phenyl">
+              <span class="product-chip">Floor care</span>
+              <button class="wishlist-button" type="button" data-wishlist="Phenyl" aria-label="Save Phenyl" aria-pressed="false" title="Save Phenyl">
+                <i data-lucide="heart" aria-hidden="true"></i>
+              </button>
+              <img src="assets/dineclean-product-collection.png" alt="Phenyl product presentation" width="1122" height="1400" loading="lazy" decoding="async" />
+            </div>
+            <div class="product-content">
+              <div class="product-title-row"><h3>Phenyl</h3><span>02</span></div>
+              <p>A practical choice for regular floor care and a clean-feeling finish.</p>
+              <div class="product-meta"><span>Everyday essential</span><strong>Enquire for price</strong></div>
+              <div class="product-actions">
+                <button class="inline-action" type="button" data-quick-view="Phenyl"><i data-lucide="eye" aria-hidden="true"></i> Quick view</button>
+                <button class="product-add" type="button" data-add-enquiry="Phenyl">Add to enquiry <i data-lucide="plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
           </article>
-          <article class="product-card">
-            <span class="product-icon">03</span>
-            <h3>Floor Cleaners</h3>
-            <p>For tiled, marble, and common household floor surfaces.</p>
+
+          <article class="product-card" id="floor-cleaner" data-product-card data-name="Floor Cleaner" data-category="Floor care">
+            <div class="product-media product-media-floor">
+              <span class="product-chip">Floor care</span>
+              <button class="wishlist-button" type="button" data-wishlist="Floor Cleaner" aria-label="Save Floor Cleaner" aria-pressed="false" title="Save Floor Cleaner">
+                <i data-lucide="heart" aria-hidden="true"></i>
+              </button>
+              <img src="assets/dineclean-product-collection.png" alt="Floor cleaner product presentation" width="1122" height="1400" loading="lazy" decoding="async" />
+            </div>
+            <div class="product-content">
+              <div class="product-title-row"><h3>Floor Cleaner</h3><span>03</span></div>
+              <p>For tile, marble, and common household floor surfaces that need regular attention.</p>
+              <div class="product-meta"><span>Surface care</span><strong>Enquire for price</strong></div>
+              <div class="product-actions">
+                <button class="inline-action" type="button" data-quick-view="Floor Cleaner"><i data-lucide="eye" aria-hidden="true"></i> Quick view</button>
+                <button class="product-add" type="button" data-add-enquiry="Floor Cleaner">Add to enquiry <i data-lucide="plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
           </article>
-          <article class="product-card">
-            <span class="product-icon">04</span>
-            <h3>Glass Cleaners</h3>
-            <p>For mirrors, windows, glass tables, and bright surfaces.</p>
+
+          <article class="product-card" id="glass-cleaner" data-product-card data-name="Glass Cleaner" data-category="Surface care">
+            <div class="product-media product-media-glass">
+              <span class="product-chip">Surface care</span>
+              <button class="wishlist-button" type="button" data-wishlist="Glass Cleaner" aria-label="Save Glass Cleaner" aria-pressed="false" title="Save Glass Cleaner">
+                <i data-lucide="heart" aria-hidden="true"></i>
+              </button>
+              <img src="assets/dineclean-product-collection.png" alt="Glass cleaner product presentation" width="1122" height="1400" loading="lazy" decoding="async" />
+            </div>
+            <div class="product-content">
+              <div class="product-title-row"><h3>Glass Cleaner</h3><span>04</span></div>
+              <p>For windows, mirrors, glass tables, and brighter-looking everyday surfaces.</p>
+              <div class="product-meta"><span>Surface care</span><strong>Enquire for price</strong></div>
+              <div class="product-actions">
+                <button class="inline-action" type="button" data-quick-view="Glass Cleaner"><i data-lucide="eye" aria-hidden="true"></i> Quick view</button>
+                <button class="product-add" type="button" data-add-enquiry="Glass Cleaner">Add to enquiry <i data-lucide="plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
           </article>
-          <article class="product-card">
-            <span class="product-icon">05</span>
-            <h3>Fresheners</h3>
-            <p>For a pleasant fragrance in frequently used spaces.</p>
+
+          <article class="product-card" id="freshener" data-product-card data-name="Freshener" data-category="Fresh spaces">
+            <div class="product-media product-media-freshener">
+              <span class="product-chip">Fresh spaces</span>
+              <button class="wishlist-button" type="button" data-wishlist="Freshener" aria-label="Save Freshener" aria-pressed="false" title="Save Freshener">
+                <i data-lucide="heart" aria-hidden="true"></i>
+              </button>
+              <img src="assets/dineclean-product-collection.png" alt="Freshener product presentation" width="1122" height="1400" loading="lazy" decoding="async" />
+            </div>
+            <div class="product-content">
+              <div class="product-title-row"><h3>Freshener</h3><span>05</span></div>
+              <p>For a pleasant finishing touch in frequently used home and workplace spaces.</p>
+              <div class="product-meta"><span>Air care</span><strong>Enquire for price</strong></div>
+              <div class="product-actions">
+                <button class="inline-action" type="button" data-quick-view="Freshener"><i data-lucide="eye" aria-hidden="true"></i> Quick view</button>
+                <button class="product-add" type="button" data-add-enquiry="Freshener">Add to enquiry <i data-lucide="plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
           </article>
-          <article class="product-card">
-            <span class="product-icon">06</span>
-            <h3>Room Fresheners</h3>
-            <p>For bedrooms, halls, offices, washrooms, and reception areas.</p>
+
+          <article class="product-card" id="room-freshener" data-product-card data-name="Room Freshener" data-category="Fresh spaces">
+            <div class="product-media product-media-room">
+              <span class="product-chip">Fresh spaces</span>
+              <button class="wishlist-button" type="button" data-wishlist="Room Freshener" aria-label="Save Room Freshener" aria-pressed="false" title="Save Room Freshener">
+                <i data-lucide="heart" aria-hidden="true"></i>
+              </button>
+              <img src="assets/dineclean-product-collection.png" alt="Room freshener product presentation" width="1122" height="1400" loading="lazy" decoding="async" />
+            </div>
+            <div class="product-content">
+              <div class="product-title-row"><h3>Room Freshener</h3><span>06</span></div>
+              <p>For bedrooms, halls, offices, reception areas, and other shared spaces.</p>
+              <div class="product-meta"><span>Air care</span><strong>Enquire for price</strong></div>
+              <div class="product-actions">
+                <button class="inline-action" type="button" data-quick-view="Room Freshener"><i data-lucide="eye" aria-hidden="true"></i> Quick view</button>
+                <button class="product-add" type="button" data-add-enquiry="Room Freshener">Add to enquiry <i data-lucide="plus" aria-hidden="true"></i></button>
+              </div>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="contact-section" id="contact">
-        <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2>Ready to order or ask about products?</h2>
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="about-image" data-reveal="left">
+          <img src="assets/dineclean-product-collection.png" alt="DineClean cleaning range arranged for home care" width="1122" height="1400" loading="lazy" decoding="async" />
+          <div class="about-image-caption"><i data-lucide="leaf" aria-hidden="true"></i><span>Fresh thinking for everyday care</span></div>
+        </div>
+        <div class="about-copy" data-reveal="right">
+          <p class="eyebrow"><span></span> About DineClean</p>
+          <h2 id="about-title">Small routines. Noticeably cared-for spaces.</h2>
           <p>
-            Share your requirement and Dine Clean will help you choose the right cleaning items
-            for your home, shop, office, or restaurant.
+            DineClean brings together essential products for the daily moments that keep a space comfortable, clean, and welcoming. From the kitchen sink to the final room refresh, every category has a clear place in your routine.
           </p>
+          <p>
+            Whether you are caring for a family home, office, shop, restaurant, or shared space, our range is built around the needs that come up again and again.
+          </p>
+          <div class="about-points">
+            <div><i data-lucide="utensils" aria-hidden="true"></i><span>Kitchen and dish care</span></div>
+            <div><i data-lucide="spray-can" aria-hidden="true"></i><span>Floor and surface care</span></div>
+            <div><i data-lucide="wind" aria-hidden="true"></i><span>Fresh spaces and air care</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section choice-section" aria-labelledby="choice-title">
+        <div class="section-heading centered" data-reveal="up">
+          <p class="eyebrow"><span></span> Why choose DineClean</p>
+          <h2 id="choice-title">An easier way to choose everyday care.</h2>
+        </div>
+        <div class="choice-grid">
+          <article class="choice-card" data-reveal="up"><i data-lucide="list-checks" aria-hidden="true"></i><h3>Clear product choices</h3><p>Find the essential you need without overcomplicating the routine.</p></article>
+          <article class="choice-card" data-reveal="up"><i data-lucide="calendar-check-2" aria-hidden="true"></i><h3>Made for daily use</h3><p>A practical range for the cleaning moments that happen every day.</p></article>
+          <article class="choice-card" data-reveal="up"><i data-lucide="layout-grid" aria-hidden="true"></i><h3>Care across spaces</h3><p>Kitchen, floor, glass, and room care in one considered collection.</p></article>
+          <article class="choice-card" data-reveal="up"><i data-lucide="phone-call" aria-hidden="true"></i><h3>Easy to ask</h3><p>Use WhatsApp, phone, or email when you want help selecting products.</p></article>
+        </div>
+      </section>
+
+      <section class="statement-section" id="mission" aria-labelledby="mission-title">
+        <div class="statement-card statement-dark" data-reveal="left">
+          <div>
+            <p class="eyebrow"><span></span> Our mission</p>
+            <h2 id="mission-title">To make everyday cleaning feel simpler, more reliable, and more considered.</h2>
+          </div>
+          <p>We want the practical work of caring for a space to feel easier to choose, easier to manage, and more satisfying to finish.</p>
+          <i class="statement-mark" data-lucide="sparkles" aria-hidden="true"></i>
+        </div>
+        <div class="statement-card statement-light" id="vision" data-reveal="right">
+          <div>
+            <p class="eyebrow"><span></span> Our vision</p>
+            <h2>To become a trusted name in thoughtful care for Indian homes and everyday workspaces.</h2>
+          </div>
+          <p>We are building DineClean around clear choices, approachable support, and a lasting respect for the spaces people live and work in.</p>
+          <i class="statement-mark" data-lucide="heart-handshake" aria-hidden="true"></i>
+        </div>
+      </section>
+
+      <section class="section category-section" aria-labelledby="categories-title">
+        <div class="section-heading split-heading" data-reveal="up">
+          <div>
+            <p class="eyebrow"><span></span> Browse by need</p>
+            <h2 id="categories-title">Care that meets the moment.</h2>
+          </div>
+          <a class="text-button" href="#products">View all products <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card category-kitchen" href="#dish-wash" data-reveal="up"><span>01</span><i data-lucide="utensils" aria-hidden="true"></i><h3>Kitchen Care</h3><p>Dish wash and easy daily cleanup.</p><i class="category-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a class="category-card category-floor" href="#floor-cleaner" data-reveal="up"><span>02</span><i data-lucide="waves" aria-hidden="true"></i><h3>Floor &amp; Surface</h3><p>Phenyl, floor, and glass cleaning.</p><i class="category-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          <a class="category-card category-air" href="#room-freshener" data-reveal="up"><span>03</span><i data-lucide="wind" aria-hidden="true"></i><h3>Fresh Spaces</h3><p>Fresheners for the finishing touch.</p><i class="category-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
+
+      <section class="promise-section" aria-labelledby="promise-title">
+        <div class="promise-intro" data-reveal="left">
+          <p class="eyebrow"><span></span> The DineClean promise</p>
+          <h2 id="promise-title">Less fuss. More care in every corner.</h2>
+        </div>
+        <div class="promise-list" data-reveal="right">
+          <div><span>01</span><div><h3>Start with the space</h3><p>Choose what you need for the kitchen, floor, glass, or air around you.</p></div></div>
+          <div><span>02</span><div><h3>Keep it practical</h3><p>Build a daily routine around products that make sense for real life.</p></div></div>
+          <div><span>03</span><div><h3>Ask with confidence</h3><p>Tell us what you need and we will help guide your product enquiry.</p></div></div>
+        </div>
+      </section>
+
+      <section class="section faq-section" aria-labelledby="faq-title">
+        <div class="section-heading centered" data-reveal="up">
+          <p class="eyebrow"><span></span> Frequently asked questions</p>
+          <h2 id="faq-title">Simple answers, before you get in touch.</h2>
+        </div>
+        <div class="faq-list" data-reveal="up">
+          <details>
+            <summary>How can I place an enquiry?<i data-lucide="plus" aria-hidden="true"></i></summary>
+            <p>Add products to your enquiry list, then send it directly on WhatsApp. You can also contact us by phone or email.</p>
+          </details>
+          <details>
+            <summary>Can I ask about more than one product?<i data-lucide="plus" aria-hidden="true"></i></summary>
+            <p>Yes. Add every product you are interested in to the enquiry list and send one clear message to DineClean.</p>
+          </details>
+          <details>
+            <summary>Can I discuss a bulk requirement?<i data-lucide="plus" aria-hidden="true"></i></summary>
+            <p>Yes. Share the products and quantity you are looking for through WhatsApp, phone, or email to discuss availability.</p>
+          </details>
+          <details>
+            <summary>Where can I get product and pack information?<i data-lucide="plus" aria-hidden="true"></i></summary>
+            <p>Use the quick view on any product, then contact us for the latest pack options, availability, and price information.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-intro" data-reveal="left">
+          <p class="eyebrow"><span></span> Contact DineClean</p>
+          <h2 id="contact-title">Let us help you choose the right everyday essentials.</h2>
+          <p>Tell us about the space you are caring for or the products you need. We will take it from there.</p>
+          <div class="contact-details">
+            <a href="tel:+918470004450"><i data-lucide="phone" aria-hidden="true"></i><span><small>Call us</small>+91 8470004450</span></a>
+            <a href="mailto:apenterprisescontact@gmail.com"><i data-lucide="mail" aria-hidden="true"></i><span><small>Email us</small>apenterprisescontact@gmail.com</span></a>
+          </div>
+          <a class="contact-whatsapp" href="https://wa.me/918470004450" target="_blank" rel="noopener"><i data-lucide="message-circle" aria-hidden="true"></i> Start a WhatsApp chat</a>
         </div>
 
-        <div class="contact-box">
-          <div class="contact-row">
-            <span>Phone</span>
-            <a href="tel:+918470004450">+91- 8470004450</a>
+        <form class="enquiry-form" id="contact-form" novalidate data-reveal="right">
+          <div class="form-heading"><span>Send an enquiry</span><p>We will open WhatsApp with your details filled in.</p></div>
+          <div class="form-grid">
+            <label>Your name<input type="text" name="name" autocomplete="name" required placeholder="Your name" /></label>
+            <label>Phone number<input type="tel" name="phone" autocomplete="tel" required placeholder="Your phone number" /></label>
           </div>
-          <div class="contact-row">
-            <span>Email</span>
-            <a href="mailto:apenterprisescontact@gmail.com">apenterprisescontact@gmail.com</a>
-          </div>
-          <div class="contact-actions">
-            <a class="button primary" href="https://wa.me/918470004450">WhatsApp</a>
-            <a class="button secondary" href="mailto:apenterprisescontact@gmail.com">Email</a>
-          </div>
-        </div>
+          <label>What do you need?<select name="product" required><option value="">Select a product</option><option>Dish Wash</option><option>Phenyl</option><option>Floor Cleaner</option><option>Glass Cleaner</option><option>Freshener</option><option>Room Freshener</option><option>Multiple products</option><option>Bulk requirement</option></select></label>
+          <label>Tell us a little more<textarea name="message" rows="4" placeholder="For example: quantity, use case, or questions"></textarea></label>
+          <button class="button button-primary form-submit" type="submit">Send on WhatsApp <i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+          <p class="form-note"><i data-lucide="lock-keyhole" aria-hidden="true"></i> Your details are used only to respond to your enquiry.</p>
+        </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <a class="footer-brand" href="#home">
-        <img src="assets/dineclean-logo.jpeg" alt="Dine Clean logo" />
-        <span>Dine Clean</span>
-      </a>
-      <p>&copy; 2026 Dine Clean. Home needs and cleaning essentials.</p>
+      <div class="footer-main">
+        <div class="footer-brand-block">
+          <a class="brand footer-brand" href="#home" aria-label="DineClean home">
+            <img src="assets/dineclean-logo.jpeg" alt="DineClean logo" width="96" height="96" />
+            <span>Dine<span>Clean</span><sup>&trade;</sup></span>
+          </a>
+          <p>Thoughtful home and hygiene essentials for spaces that feel well cared for.</p>
+          <div class="footer-contact-icons">
+            <a href="https://wa.me/918470004450" target="_blank" rel="noopener" aria-label="WhatsApp DineClean" title="WhatsApp"><i data-lucide="message-circle" aria-hidden="true"></i></a>
+            <a href="mailto:apenterprisescontact@gmail.com" aria-label="Email DineClean" title="Email"><i data-lucide="mail" aria-hidden="true"></i></a>
+            <a href="tel:+918470004450" aria-label="Call DineClean" title="Call"><i data-lucide="phone" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-column"><h3>Explore</h3><a href="#about">About DineClean</a><a href="#mission">Our Mission</a><a href="#vision">Our Vision</a><a href="#products">Product List</a></div>
+        <div class="footer-column"><h3>Categories</h3><a href="#dish-wash">Kitchen Care</a><a href="#floor-cleaner">Floor &amp; Surface</a><a href="#glass-cleaner">Glass Care</a><a href="#room-freshener">Fresh Spaces</a></div>
+        <div class="footer-column footer-newsletter"><h3>Stay in touch</h3><p>Get in touch for product information and updates.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="Your email address" required /><button type="submit" aria-label="Email DineClean for updates" title="Email DineClean"><i data-lucide="arrow-up-right" aria-hidden="true"></i></button></form><a class="footer-contact-link" href="#contact">Contact DineClean <i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="current-year">2026</span> DineClean. All rights reserved.</p><nav aria-label="Legal links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="shipping.html">Shipping</a><a href="refund.html">Refunds</a></nav></div>
     </footer>
 
-    <script src="script.js"></script>
+    <a class="floating-whatsapp" href="https://wa.me/918470004450" target="_blank" rel="noopener" aria-label="Chat with DineClean on WhatsApp" title="WhatsApp DineClean"><i data-lucide="message-circle" aria-hidden="true"></i><span>WhatsApp</span></a>
+    <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top" title="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title">
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Close product details" title="Close"><i data-lucide="x" aria-hidden="true"></i></button>
+      <div class="product-dialog-media"><img id="dialog-product-image" src="assets/dineclean-product-collection.png" alt="" width="1122" height="1400" /></div>
+      <div class="product-dialog-content"><p class="eyebrow" id="dialog-category"><span></span> Product details</p><h2 id="product-dialog-title">Product</h2><p id="dialog-product-description"></p><div class="dialog-info"><div><span>Best for</span><strong id="dialog-product-use"></strong></div><div><span>Need help?</span><strong>Ask for pack details and price</strong></div></div><button class="button button-primary" type="button" id="dialog-add-button">Add to enquiry <i data-lucide="plus" aria-hidden="true"></i></button></div>
+    </dialog>
+
+    <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-dialog-title">
+      <div class="dialog-top"><h2 id="search-dialog-title">Find a product</h2><button class="dialog-close" type="button" data-close-dialog aria-label="Close search" title="Close"><i data-lucide="x" aria-hidden="true"></i></button></div>
+      <label class="search-field"><i data-lucide="search" aria-hidden="true"></i><input id="product-search" type="search" placeholder="Try dish wash, floor, glass..." autocomplete="off" /><span class="sr-only">Search products</span></label>
+      <div class="search-results" id="search-results" aria-live="polite"></div>
+    </dialog>
+
+    <dialog class="enquiry-dialog" id="enquiry-dialog" aria-labelledby="enquiry-dialog-title">
+      <div class="dialog-top"><div><p class="eyebrow"><span></span> Your product list</p><h2 id="enquiry-dialog-title">Product enquiry</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close product enquiry" title="Close"><i data-lucide="x" aria-hidden="true"></i></button></div>
+      <div class="enquiry-items" id="enquiry-items"></div>
+      <div class="enquiry-empty" id="enquiry-empty"><i data-lucide="shopping-bag" aria-hidden="true"></i><h3>Your enquiry list is empty</h3><p>Add any products you would like to ask about.</p><button class="button button-secondary" type="button" data-close-dialog data-explore-products>Explore products</button></div>
+      <div class="enquiry-footer" id="enquiry-footer" hidden><p>Your selected products will be included in a WhatsApp message.</p><button class="button button-primary" type="button" data-send-enquiry>Continue on WhatsApp <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div>
+    </dialog>
   </body>
 </html>

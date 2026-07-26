@@ -168,6 +168,41 @@
     revealItems.forEach((item) => revealObserver.observe(item));
   }
 
+  const countItems = $$("[data-count-to]");
+  const animateCount = (item) => {
+    const target = Number(item.dataset.countTo || "0");
+    if (!target) return;
+    if (reducedMotion) {
+      item.textContent = String(target);
+      return;
+    }
+    const start = performance.now();
+    const duration = 900;
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      item.textContent = String(Math.round(target * eased));
+      if (progress < 1) window.requestAnimationFrame(tick);
+    };
+    window.requestAnimationFrame(tick);
+  };
+
+  if (!("IntersectionObserver" in window)) {
+    countItems.forEach(animateCount);
+  } else {
+    const countObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          animateCount(entry.target);
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.6 }
+    );
+    countItems.forEach((item) => countObserver.observe(item));
+  }
+
   const toast = $(".toast");
   let toastTimer;
   const showToast = (message) => {
@@ -197,6 +232,20 @@
 
   let savedProducts = safeReadList("dineclean-wishlist").filter((name) => products[name]);
   let enquiryProducts = safeReadList("dineclean-enquiry").filter((name) => products[name]);
+  const productCards = $$("[data-product-card]");
+
+  $$("[data-product-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.productFilter || "all";
+      $$("[data-product-filter]").forEach((item) => item.classList.toggle("is-active", item === button));
+      productCards.forEach((card) => {
+        const isMatch = filter === "all" || card.dataset.category === filter;
+        card.classList.toggle("is-filtered-out", !isMatch);
+      });
+      const visibleCount = productCards.filter((card) => !card.classList.contains("is-filtered-out")).length;
+      showToast(filter === "all" ? "Showing all DineClean products." : `Showing ${visibleCount} ${filter} product${visibleCount === 1 ? "" : "s"}.`);
+    });
+  });
 
   const productDialog = $("#product-dialog");
   const searchDialog = $("#search-dialog");

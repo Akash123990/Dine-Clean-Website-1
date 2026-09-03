@@ -19,6 +19,14 @@
       bestFor: "Routine floor cleaning in everyday spaces",
       position: "26% 49%"
     },
+    "Neem Rose Jasmine Phenyl": {
+      id: "neem-rose-jasmine-phenyl",
+      category: "Floor care",
+      image: "assets/neem-jasmine-rose-front.png",
+      description: "A signature 3 x 1 litre combo of Neem, Rose, and Jasmine perfumed floor cleaners. Designed to disinfect, clean, deodorise, and leave a long-lasting fragrance across everyday home surfaces.",
+      bestFor: "Floors, bathrooms, kitchens, and toilets",
+      position: "center"
+    },
     "Floor Cleaner": {
       id: "floor-cleaner",
       category: "Floor care",

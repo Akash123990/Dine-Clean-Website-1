@@ -19,6 +19,45 @@
   --header-height: 78px;
 }
 
+/* 2026 premium catalogue refresh */
+:root {
+  --premium-ink: #10271c;
+  --premium-green: #0b6137;
+  --premium-lime: #d7ec72;
+  --premium-ivory: #fbfaf4;
+  --premium-gold: #bb861d;
+}
+
+body { background: var(--premium-ivory); color: var(--premium-ink); }
+.site-header { background: rgba(251, 250, 244, .84); backdrop-filter: blur(18px); }
+.hero { position: relative; overflow: hidden; background: radial-gradient(circle at 76% 34%, rgba(215,236,114,.34), transparent 32%), linear-gradient(135deg, #f9f8ef 0%, #f2f6e8 55%, #e4efd9 100%); }
+.hero::before { content: ""; position: absolute; inset: 0; opacity: .22; pointer-events: none; background-image: linear-gradient(rgba(16,39,28,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(16,39,28,.07) 1px, transparent 1px); background-size: 72px 72px; mask-image: linear-gradient(to right, black, transparent 52%); }
+.hero-copy h1 { letter-spacing: -.055em; line-height: .94; }
+.hero-copy h1 em { color: var(--premium-green); font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+.hero-intro { max-width: 660px; }
+.hero-visual-frame { background: rgba(255,255,255,.76); border: 1px solid rgba(11,97,55,.12); border-radius: 36px 36px 120px 36px; box-shadow: 0 35px 90px rgba(16,39,28,.16); }
+.hero-visual-frame img { object-fit: contain; }
+.button-primary { background: var(--premium-green); box-shadow: 0 12px 30px rgba(11,97,55,.22); }
+.button-primary:hover { background: #084c2c; transform: translateY(-2px); }
+.signature-section { background: #fff; }
+.signature-feature { background: linear-gradient(135deg, #10271c, #17462e); color: white; border-radius: 32px; overflow: hidden; box-shadow: 0 28px 70px rgba(16,39,28,.18); }
+.signature-feature .signature-image { background: linear-gradient(145deg, #f7f9ee, #dbe9c8); }
+.signature-feature .signature-image img { object-fit: contain; }
+.signature-copy p { color: rgba(255,255,255,.75); }
+.product-grid { align-items: stretch; }
+.product-card { border-color: rgba(16,39,28,.1); box-shadow: 0 12px 40px rgba(16,39,28,.06); transition: transform .35s ease, box-shadow .35s ease; }
+.product-card:hover { transform: translateY(-7px); box-shadow: 0 24px 60px rgba(16,39,28,.12); }
+.product-card-featured { grid-column: span 2; border: 1px solid rgba(187,134,29,.28); }
+.product-card-featured .product-media { min-height: 440px; }
+.product-media-botanical { background: radial-gradient(circle at 50% 45%, #fff 0, #f2f7df 48%, #dcecc2 100%); }
+.product-media-botanical img { transform: scale(.96); }
+.fragrance-notes { display: flex; flex-wrap: wrap; gap: .5rem; margin: .8rem 0 1rem; }
+.fragrance-notes span { padding: .42rem .72rem; border: 1px solid rgba(11,97,55,.17); border-radius: 999px; color: var(--premium-green); background: rgba(215,236,114,.18); font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.choice-card, .care-system-grid article { background: rgba(255,255,255,.82); border-color: rgba(16,39,28,.1); }
+.contact-section { background: linear-gradient(140deg, #0c2418, #123d27 62%, #195837); }
+@media (max-width: 900px) { .product-card-featured { grid-column: span 1; } .product-card-featured .product-media { min-height: 330px; } }
+@media (max-width: 620px) { .hero-visual-frame { border-radius: 24px 24px 70px 24px; } .hero-copy h1 { line-height: 1; } }
+
 * {
   box-sizing: border-box;
 }
@@ -3099,3 +3138,34 @@ html.js [data-reveal].is-visible {
     transform: none;
   }
 }
+
+/* Premium refresh overrides */
+body { background: var(--premium-ivory); color: var(--premium-ink); }
+.site-header { background: rgba(251, 250, 244, .84); backdrop-filter: blur(18px); }
+main .hero { position: relative; overflow: hidden; background: radial-gradient(circle at 76% 34%, rgba(215,236,114,.34), transparent 32%), linear-gradient(135deg, #f9f8ef 0%, #f2f6e8 55%, #e4efd9 100%); }
+main .hero::before { content: ""; position: absolute; inset: 0; opacity: .22; pointer-events: none; background-image: linear-gradient(rgba(16,39,28,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(16,39,28,.07) 1px, transparent 1px); background-size: 72px 72px; mask-image: linear-gradient(to right, black, transparent 52%); }
+.hero .hero-copy h1 { letter-spacing: -.055em; line-height: .94; }
+.hero .hero-copy h1 em { color: var(--premium-green); font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+.hero .hero-intro { max-width: 660px; }
+.hero .hero-visual-frame { background: rgba(255,255,255,.76); border: 1px solid rgba(11,97,55,.12); border-radius: 36px 36px 120px 36px; box-shadow: 0 35px 90px rgba(16,39,28,.16); }
+.hero .hero-visual-frame img { object-fit: contain; }
+.button.button-primary { background: var(--premium-green); box-shadow: 0 12px 30px rgba(11,97,55,.22); }
+.button.button-primary:hover { background: #084c2c; transform: translateY(-2px); }
+.signature-section { background: #fff; }
+.signature-grid .signature-feature { background: linear-gradient(135deg, #10271c, #17462e); color: white; border-radius: 32px; overflow: hidden; box-shadow: 0 28px 70px rgba(16,39,28,.18); }
+.signature-feature .signature-image { background: linear-gradient(145deg, #f7f9ee, #dbe9c8); }
+.signature-feature .signature-image img { object-fit: contain; }
+.signature-feature .signature-copy p { color: rgba(255,255,255,.75); }
+.product-grid { align-items: stretch; }
+.product-grid .product-card { border-color: rgba(16,39,28,.1); box-shadow: 0 12px 40px rgba(16,39,28,.06); transition: transform .35s ease, box-shadow .35s ease; }
+.product-grid .product-card:hover { transform: translateY(-7px); box-shadow: 0 24px 60px rgba(16,39,28,.12); }
+.product-grid .product-card-featured { grid-column: span 2; border: 1px solid rgba(187,134,29,.28); }
+.product-card-featured .product-media { min-height: 440px; }
+.product-card .product-media-botanical { background: radial-gradient(circle at 50% 45%, #fff 0, #f2f7df 48%, #dcecc2 100%); }
+.product-media-botanical img { transform: scale(.96); }
+.fragrance-notes { display: flex; flex-wrap: wrap; gap: .5rem; margin: .8rem 0 1rem; }
+.fragrance-notes span { padding: .42rem .72rem; border: 1px solid rgba(11,97,55,.17); border-radius: 999px; color: var(--premium-green); background: rgba(215,236,114,.18); font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.choice-card, .care-system-grid article { background: rgba(255,255,255,.82); border-color: rgba(16,39,28,.1); }
+main .contact-section { background: linear-gradient(140deg, #0c2418, #123d27 62%, #195837); }
+@media (max-width: 900px) { .product-grid .product-card-featured { grid-column: span 1; } .product-card-featured .product-media { min-height: 330px; } }
+@media (max-width: 620px) { .hero .hero-visual-frame { border-radius: 24px 24px 70px 24px; } .hero .hero-copy h1 { line-height: 1; } }
